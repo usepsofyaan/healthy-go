@@ -11,14 +11,17 @@ export default function Home() {
             <span className="text-xl font-bold text-gray-900 dark:text-white">Healthy-Go</span>
           </div>
           <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
+            <a href="/services" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
               Layanan
             </a>
-            <a href="#benefits" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Keuntungan
+            <a href="/terapis" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
+              Terapis
             </a>
-            <a href="#testimonials" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Testimoni
+            <a href="/articles" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
+              Artikel
+            </a>
+            <a href="/about" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
+              Tentang
             </a>
           </div>
           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition">Hubungi Kami</button>
