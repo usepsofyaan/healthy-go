@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -180,72 +181,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-300 py-12 mt-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">HG</span>
-                </div>
-                <span className="font-bold text-white">Healthy-Go</span>
-              </div>
-              <p className="text-sm">Solusi kesehatan terpadu untuk hidup yang lebih baik.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Layanan</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Program Fitness
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Konsultasi Nutrisi
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Meditasi & Wellness
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Perusahaan</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Tentang Kami
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Karir
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Kontak</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Email: info@healthygo.com</li>
-                <li>Phone: +62 812-3456-7890</li>
-                <li>Address: Jakarta, Indonesia</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 pt-8 text-center text-sm">
-            <p>&copy; 2026 Healthy-Go. Semua hak dilindungi.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
