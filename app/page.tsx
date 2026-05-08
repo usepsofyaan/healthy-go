@@ -1,29 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-slate-900 dark:to-slate-800">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-gray-200 dark:border-slate-700">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">HG</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900 dark:text-white">Healthy-Go</span>
-          </div>
-          <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Layanan
-            </a>
-            <a href="#benefits" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Keuntungan
-            </a>
-            <a href="#testimonials" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Testimoni
-            </a>
-          </div>
-          <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition">Hubungi Kami</button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-32">
