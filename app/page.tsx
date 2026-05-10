@@ -1,32 +1,11 @@
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-slate-900 dark:to-slate-800">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-gray-200 dark:border-slate-700">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">HG</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900 dark:text-white">Healthy-Go</span>
-          </div>
-          <div className="hidden md:flex gap-8">
-            <a href="/services" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Layanan
-            </a>
-            <a href="/terapis" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Terapis
-            </a>
-            <a href="/articles" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Artikel
-            </a>
-            <a href="/about" className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition">
-              Tentang
-            </a>
-          </div>
-          <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition">Hubungi Kami</button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-32">
@@ -202,72 +181,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-300 py-12 mt-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">HG</span>
-                </div>
-                <span className="font-bold text-white">Healthy-Go</span>
-              </div>
-              <p className="text-sm">Solusi kesehatan terpadu untuk hidup yang lebih baik.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Layanan</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Program Fitness
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Konsultasi Nutrisi
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Meditasi & Wellness
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Perusahaan</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Tentang Kami
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green-400 transition">
-                    Karir
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Kontak</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Email: info@healthygo.com</li>
-                <li>Phone: +62 812-3456-7890</li>
-                <li>Address: Jakarta, Indonesia</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 pt-8 text-center text-sm">
-            <p>&copy; 2026 Healthy-Go. Semua hak dilindungi.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
